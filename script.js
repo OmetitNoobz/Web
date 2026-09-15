@@ -46,7 +46,7 @@
       nav_download: "Télécharger",
 
       // Hero
-      hero_badge: "✨ Version 1.2 — Export Vidéo Ultra-Rapide & Format 9:16",
+      hero_badge: "Version 1.2 — Export Vidéo Ultra-Rapide & Format 9:16",
       hero_title_p1: "La Bande Rythmo",
       hero_title_accent: "Nouvelle Génération",
       hero_title_p2: "pour Doublage & Post-Synchro",
@@ -130,7 +130,7 @@
       spec_ai_lbl: "Modèles IA Intégrés",
       spec_formats_lbl: "Formats & Protocoles",
       specs_local_txt: "100% Traitement Local & Hors-Ligne (Aucune donnée envoyée dans le cloud)",
-      specs_gpu_box_title: "⚡ Boost de Vitesse en Chiffres",
+      specs_gpu_box_title: "Boost de Vitesse en Chiffres",
       speed_old: "Export classique disque",
       speed_new: "OmeRyth v1.2 Direct RAM",
 
@@ -173,7 +173,7 @@
       nav_download: "Download",
 
       // Hero
-      hero_badge: "✨ Version 1.2 — Ultra-Fast Video Export & 9:16 Mobile Format",
+      hero_badge: "Version 1.2 — Ultra-Fast Video Export & 9:16 Mobile Format",
       hero_title_p1: "The Next-Generation",
       hero_title_accent: "Rhythmic Band",
       hero_title_p2: "for Dubbing & Post-Sync",
@@ -257,7 +257,7 @@
       spec_ai_lbl: "Embedded AI Models",
       spec_formats_lbl: "Formats & Protocols",
       specs_local_txt: "100% Local & Offline Processing (No data is ever sent to the cloud)",
-      specs_gpu_box_title: "⚡ Speed Comparison in Numbers",
+      specs_gpu_box_title: "Speed Comparison in Numbers",
       speed_old: "Traditional disk export",
       speed_new: "OmeRyth v1.2 RAM Streaming",
 
