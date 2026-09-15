@@ -29,6 +29,7 @@
         <a href="#showcase" class="nav-link" data-i18n="nav_showcase">Démos Vidéo</a>
         <a href="#specs" class="nav-link" data-i18n="nav_specs">Spécifications</a>
         <a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
       </div>
 
       <div class="nav-actions">
@@ -58,7 +59,7 @@
         </button>
 
         <!-- Download Action Button -->
-        <button class="btn btn-primary download-btn" id="nav-download-btn">
+        <a href="https://github.com/OmetitNoobz/Web/releases/download/v1.2/OmeRyth_Setup_v1.2.exe" download="OmeRyth_Setup_v1.2.exe" class="btn btn-primary download-btn" id="nav-download-btn">
           <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
@@ -66,10 +67,62 @@
           </svg>
           <span data-i18n="nav_download">Télécharger</span>
           <span class="btn-tag">v1.2</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="btn-icon mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <svg class="menu-icon-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="menu-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </button>
       </div>
     </nav>
   </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <a href="#" class="brand-link" aria-label="OmeRyth Home">
+          <img class="brand-logo mobile-logo" src="assets/images/logo-dark.png" alt="OmeRyth Logo">
+          <span class="brand-text">Ome<span class="text-accent">Ryth</span></span>
+        </a>
+        <button id="mobile-nav-close-btn" class="btn-icon mobile-close-btn" aria-label="Fermer le menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-nav-links">
+        <a href="#features" class="mobile-nav-link" data-i18n="nav_features">Fonctionnalités</a>
+        <a href="#showcase" class="mobile-nav-link" data-i18n="nav_showcase">Démos Vidéo</a>
+        <a href="#specs" class="mobile-nav-link" data-i18n="nav_specs">Spécifications</a>
+        <a href="#faq" class="mobile-nav-link" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <div class="mobile-nav-actions">
+        <a href="https://github.com/OmetitNoobz/Web/releases/download/v1.2/OmeRyth_Setup_v1.2.exe" download="OmeRyth_Setup_v1.2.exe" class="btn btn-primary btn-large download-btn mobile-drawer-download" id="mobile-drawer-download-btn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span data-i18n="nav_download">Télécharger</span>
+          <span class="btn-tag">v1.2</span>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <main>
     <!-- Hero Section -->
@@ -90,7 +143,7 @@
       </p>
 
       <div class="hero-cta-group">
-        <button class="btn btn-primary btn-large download-btn" id="hero-download-btn">
+        <a href="https://github.com/OmetitNoobz/Web/releases/download/v1.2/OmeRyth_Setup_v1.2.exe" download="OmeRyth_Setup_v1.2.exe" class="btn btn-primary btn-large download-btn" id="hero-download-btn">
           <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
@@ -98,7 +151,7 @@
           </svg>
           <span data-i18n="hero_cta_download">Télécharger pour Windows</span>
           <span class="cta-badge">64-bit • v1.2</span>
-        </button>
+        </a>
 
         <a href="#showcase" class="btn btn-secondary btn-large">
           <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -574,6 +627,60 @@
       </div>
     </section>
 
+    <!-- Download CTA Banner -->
+    <section id="download" class="download-banner container">
+      <div class="banner-card">
+        <div class="banner-content">
+          <h2 class="banner-title" data-i18n="banner_title">Prêt à créer des bandes rythmo parfaites ?</h2>
+          <p class="banner-desc" data-i18n="banner_desc">
+            Téléchargez OmeRyth pour Windows et découvrez la nouvelle référence du doublage assisté par ordinateur.
+          </p>
+
+          <div class="banner-actions">
+            <a href="https://github.com/OmetitNoobz/Web/releases/download/v1.2/OmeRyth_Setup_v1.2.exe" download="OmeRyth_Setup_v1.2.exe" class="btn btn-primary btn-large download-btn" id="banner-download-btn">
+              <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span data-i18n="banner_btn">Télécharger OmeRyth v1.2</span>
+              <span class="btn-tag">Dernière version</span>
+            </a>
+          </div>
+
+          <div class="banner-versions">
+            <details class="version-accordion">
+              <summary class="version-summary">
+                <span class="version-summary-text" data-i18n="banner_versions_title">Versions disponibles de l'application</span>
+                <span class="version-icon">+</span>
+              </summary>
+              <div class="version-details-body">
+                <div class="version-list">
+                  <div class="version-item">
+                    <a href="https://github.com/OmetitNoobz/Web/releases/download/v1.2/OmeRyth_Setup_v1.2.exe" class="version-download-link" download="OmeRyth_Setup_v1.2.exe">
+                      <div class="version-link-left">
+                        <svg class="version-download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                          <polyline points="7 10 12 15 17 10"></polyline>
+                          <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span class="version-filename">OmeRyth_Setup_v1.2.exe</span>
+                      </div>
+                      <div class="version-link-right">
+                        <span class="version-badge">v1.2 • Windows 64-bit</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <p class="banner-note" data-i18n="banner_note">Compatible Windows 10 & 11 • Version autonome portable disponible</p>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ Section -->
     <section id="faq" class="faq-section container">
       <div class="section-header text-center">
@@ -632,26 +739,93 @@
       </div>
     </section>
 
-    <!-- Bottom Download CTA Banner -->
-    <section class="download-banner container">
-      <div class="banner-card">
-        <div class="banner-content">
-          <h2 class="banner-title" data-i18n="banner_title">Prêt à créer des bandes rythmo parfaites ?</h2>
-          <p class="banner-desc" data-i18n="banner_desc">
-            Téléchargez OmeRyth pour Windows et découvrez la nouvelle référence du doublage assisté par ordinateur.
-          </p>
-          <div class="banner-actions">
-            <button class="btn btn-primary btn-large download-btn" id="banner-download-btn">
-              <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-              </svg>
-              <span data-i18n="banner_btn">Télécharger OmeRyth v1.2</span>
-            </button>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section container">
+      <div class="section-header text-center">
+        <span class="section-tag" data-i18n="contact_tag">Contact & Support</span>
+        <h2 class="section-title" data-i18n="contact_title">Une question ? Contactez-nous</h2>
+        <p class="section-subtitle" data-i18n="contact_desc">
+          Une question sur OmeRyth, les licences de doublage studio ou une suggestion ? Écrivez-nous directement.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <form id="contact-form" action="https://formspree.io/f/xrpbzkkd" method="POST" class="contact-form">
+          <!-- Formspree Anti-Spam Honeypot -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name" class="form-label" data-i18n="contact_name_label">Nom</label>
+              <div class="input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Votre nom complet"
+                  data-i18n-placeholder="contact_name_placeholder"
+                  required
+                  autocomplete="name"
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label" data-i18n="contact_email_label">Adresse Email</label>
+              <div class="input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="votre@email.com"
+                  data-i18n-placeholder="contact_email_placeholder"
+                  required
+                  autocomplete="email"
+                >
+              </div>
+            </div>
           </div>
-          <p class="banner-note" data-i18n="banner_note">Compatible Windows 10 & 11 • Version autonome portable disponible</p>
-        </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label" data-i18n="contact_message_label">Commentaire / Message</label>
+            <div class="input-wrapper">
+              <textarea
+                id="contact-message"
+                name="message"
+                class="form-input form-textarea"
+                rows="5"
+                placeholder="Votre message, question ou retour..."
+                data-i18n-placeholder="contact_message_placeholder"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" class="btn btn-primary btn-large contact-submit-btn" id="contact-submit-btn">
+              <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span id="contact-btn-text" data-i18n="contact_btn_send">Envoyer le message</span>
+            </button>
+            <p class="form-privacy-note" data-i18n="contact_privacy_note">
+              Vos informations restent strictement confidentielles et ne sont jamais partagées.
+            </p>
+          </div>
+
+          <div id="contact-status" class="form-status" aria-live="polite" style="display: none;"></div>
+        </form>
       </div>
     </section>
   </main>
@@ -676,6 +850,7 @@
           <a href="#showcase" data-i18n="nav_showcase">Démos Vidéo</a>
           <a href="#specs" data-i18n="nav_specs">Spécifications</a>
           <a href="#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
         </div>
         <div class="footer-col">
           <h5 data-i18n="fcol_tech">Technologies</h5>
@@ -710,8 +885,8 @@
       </svg>
     </div>
     <div class="toast-body">
-      <div class="toast-title" data-i18n="toast_title">Version 1.2 — Téléchargement</div>
-      <div class="toast-message" data-i18n="toast_msg">Le fichier d'installation sera bientôt disponible au public !</div>
+      <div class="toast-title" data-i18n="toast_title">Version 1.2 — Téléchargement lancé</div>
+      <div class="toast-message" data-i18n="toast_msg">Le téléchargement d'OmeRyth_Setup_v1.2.exe a démarré !</div>
     </div>
     <button class="toast-close" id="toast-close-btn" aria-label="Fermer notification">&times;</button>
   </div>
