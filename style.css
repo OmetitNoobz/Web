@@ -47,8 +47,8 @@
   --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.7);
   --shadow-glow: 0 0 35px var(--accent-glow);
 
-  --glow-1-color: rgba(36, 202, 68, 0.12);
-  --glow-2-color: rgba(56, 189, 248, 0.08);
+  --glow-1-color: rgba(36, 202, 68, 0.15);
+  --glow-2-color: rgba(36, 202, 68, 0.08);
 }
 
 /* LIGHT MODE */
@@ -73,7 +73,7 @@
   --shadow-glow: 0 0 30px rgba(36, 202, 68, 0.25);
 
   --glow-1-color: rgba(36, 202, 68, 0.1);
-  --glow-2-color: rgba(99, 102, 241, 0.06);
+  --glow-2-color: rgba(36, 202, 68, 0.05);
 }
 
 /* ==========================================================================
@@ -163,7 +163,7 @@ a {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--accent) 0%, #38bdf8 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, #4ade80 40%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -312,11 +312,13 @@ a {
   height: 38px;
   width: auto;
   object-fit: contain;
-  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(36, 202, 68, 0.25));
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .brand-link:hover .brand-logo {
-  transform: scale(1.05);
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 16px rgba(36, 202, 68, 0.5));
 }
 
 .brand-text {
@@ -775,7 +777,7 @@ a {
 
 .wave-bar:nth-child(even) {
   animation-duration: 0.8s;
-  background-color: #38bdf8;
+  background-color: #4ade80;
 }
 
 @keyframes bounceBar {
@@ -939,7 +941,7 @@ a {
 }
 
 .mobile-role {
-  color: #38bdf8;
+  color: var(--accent);
   font-weight: 800;
 }
 
@@ -971,7 +973,7 @@ a {
 
 .waveform-canvas-bars span {
   flex: 1;
-  background: linear-gradient(180deg, var(--accent) 0%, #38bdf8 100%);
+  background: linear-gradient(180deg, var(--accent) 0%, #4ade80 100%);
   border-radius: 2px;
   animation: waveDance 1s ease-in-out infinite alternate;
 }
