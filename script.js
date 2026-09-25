@@ -43,10 +43,11 @@
       nav_showcase: "Démos Vidéo",
       nav_specs: "Spécifications",
       nav_faq: "FAQ",
+      nav_contact: "Contact",
       nav_download: "Télécharger",
 
       // Hero
-      hero_badge: "✨ Version 1.2 — Export Vidéo Ultra-Rapide & Format 9:16",
+      hero_badge: "Version 1.2 — Export Vidéo Ultra-Rapide & Format 9:16",
       hero_title_p1: "La Bande Rythmo",
       hero_title_accent: "Nouvelle Génération",
       hero_title_p2: "pour Doublage & Post-Synchro",
@@ -130,7 +131,7 @@
       spec_ai_lbl: "Modèles IA Intégrés",
       spec_formats_lbl: "Formats & Protocoles",
       specs_local_txt: "100% Traitement Local & Hors-Ligne (Aucune donnée envoyée dans le cloud)",
-      specs_gpu_box_title: "⚡ Boost de Vitesse en Chiffres",
+      specs_gpu_box_title: "Boost de Vitesse en Chiffres",
       speed_old: "Export classique disque",
       speed_new: "OmeRyth v1.2 Direct RAM",
 
@@ -149,6 +150,7 @@
       // Bottom Banner
       banner_title: "Prêt à créer des bandes rythmo parfaites ?",
       banner_desc: "Téléchargez OmeRyth pour Windows et découvrez la nouvelle référence du doublage assisté par ordinateur.",
+      banner_versions_title: "Versions disponibles de l'application",
       banner_btn: "Télécharger OmeRyth v1.2",
       banner_note: "Compatible Windows 10 & 11 • Version autonome portable disponible",
 
@@ -159,9 +161,25 @@
       fcol_compat: "Compatibilité",
       footer_privacy: "Conçu pour les créateurs de doublage",
 
+      // Contact
+      contact_tag: "Contact & Support",
+      contact_title: "Une question ? Contactez-nous",
+      contact_desc: "Une question sur OmeRyth, les licences de doublage studio ou une suggestion ? Écrivez-nous directement.",
+      contact_name_label: "Nom",
+      contact_name_placeholder: "Votre nom complet",
+      contact_email_label: "Adresse Email",
+      contact_email_placeholder: "votre@email.com",
+      contact_message_label: "Commentaire / Message",
+      contact_message_placeholder: "Votre message, question ou retour...",
+      contact_btn_send: "Envoyer le message",
+      contact_btn_sending: "Envoi en cours...",
+      contact_privacy_note: "Vos informations restent strictement confidentielles et ne sont jamais partagées.",
+      contact_success: "Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.",
+      contact_error: "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou vérifier vos informations.",
+
       // Toast
-      toast_title: "Version 1.2 — Téléchargement",
-      toast_msg: "Le fichier d'installation sera bientôt disponible au public !"
+      toast_title: "Version 1.2 — Téléchargement lancé",
+      toast_msg: "Le téléchargement d'OmeRyth_Setup_v1.2.exe a démarré !"
     },
 
     en: {
@@ -170,10 +188,11 @@
       nav_showcase: "Video Demos",
       nav_specs: "Specifications",
       nav_faq: "FAQ",
+      nav_contact: "Contact",
       nav_download: "Download",
 
       // Hero
-      hero_badge: "✨ Version 1.2 — Ultra-Fast Video Export & 9:16 Mobile Format",
+      hero_badge: "Version 1.2 — Ultra-Fast Video Export & 9:16 Mobile Format",
       hero_title_p1: "The Next-Generation",
       hero_title_accent: "Rhythmic Band",
       hero_title_p2: "for Dubbing & Post-Sync",
@@ -257,7 +276,7 @@
       spec_ai_lbl: "Embedded AI Models",
       spec_formats_lbl: "Formats & Protocols",
       specs_local_txt: "100% Local & Offline Processing (No data is ever sent to the cloud)",
-      specs_gpu_box_title: "⚡ Speed Comparison in Numbers",
+      specs_gpu_box_title: "Speed Comparison in Numbers",
       speed_old: "Traditional disk export",
       speed_new: "OmeRyth v1.2 RAM Streaming",
 
@@ -276,6 +295,7 @@
       // Bottom Banner
       banner_title: "Ready to create flawless rhythmic bands?",
       banner_desc: "Download OmeRyth for Windows and experience the new standard in computer-assisted dubbing.",
+      banner_versions_title: "Available Application Versions",
       banner_btn: "Download OmeRyth v1.2",
       banner_note: "Compatible with Windows 10 & 11 • Portable standalone version available",
 
@@ -286,9 +306,25 @@
       fcol_compat: "Compatibility",
       footer_privacy: "Built for dubbing creators and sound designers",
 
+      // Contact
+      contact_tag: "Contact & Support",
+      contact_title: "Have a Question? Get in Touch",
+      contact_desc: "Any questions about OmeRyth, studio dubbing licensing, or feedback? Drop us a line directly.",
+      contact_name_label: "Name",
+      contact_name_placeholder: "Your full name",
+      contact_email_label: "Email Address",
+      contact_email_placeholder: "your@email.com",
+      contact_message_label: "Comment / Message",
+      contact_message_placeholder: "Your message, question, or feedback...",
+      contact_btn_send: "Send Message",
+      contact_btn_sending: "Sending...",
+      contact_privacy_note: "Your information remains strictly confidential and will never be shared.",
+      contact_success: "Thank you! Your message has been sent successfully. We will get back to you shortly.",
+      contact_error: "An error occurred while sending. Please try again or verify your input.",
+
       // Toast
-      toast_title: "Version 1.2 — Download",
-      toast_msg: "Public download link will be available very soon!"
+      toast_title: "Version 1.2 — Download Started",
+      toast_msg: "Downloading OmeRyth_Setup_v1.2.exe has started!"
     }
   };
 
@@ -308,6 +344,14 @@
   const activeWindowTitleEl = document.getElementById('active-window-title');
   const switchTabButtons = document.querySelectorAll('[data-switch-tab]');
   const downloadButtons = document.querySelectorAll('.download-btn');
+
+  // Mobile Drawer Elements
+  const mobileLogo = document.querySelector('.mobile-logo');
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+  const mobileNavBackdrop = document.getElementById('mobile-nav-backdrop');
+  const mobileNavCloseBtn = document.getElementById('mobile-nav-close-btn');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
   // State
   const state = {
@@ -356,11 +400,12 @@
     safeSet('omeryth_theme', theme);
 
     // Swap logos according to requirement:
-    // - Dark mode: original colors (green 'O' + white/silver 'R')
-    // - Light mode: user-provided PNG (green 'O' + black 'R')
+    // - Dark mode: White 'O' + Green 'R' (logo-dark.png)
+    // - Light mode: Black 'O' + Green 'R' (logo-light.png)
     const logoSrc = (theme === 'light') ? 'assets/images/logo-light.png' : 'assets/images/logo-dark.png';
     if (navLogo) navLogo.src = logoSrc;
     if (footerLogo) footerLogo.src = logoSrc;
+    if (mobileLogo) mobileLogo.src = logoSrc;
   }
 
   function toggleTheme() {
@@ -391,6 +436,15 @@
       const key = el.getAttribute('data-i18n');
       if (translations[lang][key]) {
         el.textContent = translations[lang][key];
+      }
+    });
+
+    // Update input placeholders with data-i18n-placeholder
+    const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+    placeholderElements.forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (translations[lang][key]) {
+        el.setAttribute('placeholder', translations[lang][key]);
       }
     });
 
@@ -491,7 +545,9 @@
   }
 
   downloadButtons.forEach(btn => {
-    btn.addEventListener('click', showDownloadToast);
+    btn.addEventListener('click', function () {
+      showDownloadToast();
+    });
   });
 
   if (toastCloseBtn) {
@@ -519,7 +575,147 @@
   });
 
   // =========================================================================
-  // 10. INITIALIZATION
+  // 10. CONTACT FORM HANDLER (Formspree AJAX)
+  // =========================================================================
+  const contactForm = document.getElementById('contact-form');
+  const contactStatus = document.getElementById('contact-status');
+  const contactSubmitBtn = document.getElementById('contact-submit-btn');
+  const contactBtnText = document.getElementById('contact-btn-text');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      const currentLang = state.lang || 'fr';
+      const dict = translations[currentLang] || translations.fr;
+
+      if (contactSubmitBtn) {
+        contactSubmitBtn.disabled = true;
+      }
+      if (contactBtnText) {
+        contactBtnText.textContent = dict.contact_btn_sending;
+      }
+      if (contactStatus) {
+        contactStatus.style.display = 'none';
+        contactStatus.className = 'form-status';
+      }
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          contactForm.reset();
+          if (contactStatus) {
+            contactStatus.textContent = dict.contact_success;
+            contactStatus.className = 'form-status form-status-success';
+            contactStatus.style.display = 'flex';
+          }
+        } else {
+          const data = await response.json().catch(() => ({}));
+          let errorMsg = dict.contact_error;
+          if (data && data.errors && data.errors.length > 0) {
+            errorMsg = data.errors.map(err => err.message).join(', ');
+          }
+          if (contactStatus) {
+            contactStatus.textContent = errorMsg;
+            contactStatus.className = 'form-status form-status-error';
+            contactStatus.style.display = 'flex';
+          }
+        }
+      } catch (err) {
+        if (contactStatus) {
+          contactStatus.textContent = dict.contact_error;
+          contactStatus.className = 'form-status form-status-error';
+          contactStatus.style.display = 'flex';
+        }
+      } finally {
+        if (contactSubmitBtn) {
+          contactSubmitBtn.disabled = false;
+        }
+        if (contactBtnText) {
+          contactBtnText.textContent = dict.contact_btn_send;
+        }
+      }
+    });
+  }
+
+  // =========================================================================
+  // 11. MOBILE MENU DRAWER CONTROLLER
+  // =========================================================================
+  function openMobileMenu() {
+    if (!mobileNavDrawer) return;
+    mobileNavDrawer.classList.add('open');
+    mobileNavDrawer.setAttribute('aria-hidden', 'false');
+    if (mobileMenuToggle) {
+      mobileMenuToggle.classList.add('open');
+      mobileMenuToggle.setAttribute('aria-expanded', 'true');
+    }
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMobileMenu() {
+    if (!mobileNavDrawer) return;
+    mobileNavDrawer.classList.remove('open');
+    mobileNavDrawer.setAttribute('aria-hidden', 'true');
+    if (mobileMenuToggle) {
+      mobileMenuToggle.classList.remove('open');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    }
+    document.body.style.overflow = '';
+  }
+
+  function toggleMobileMenu() {
+    if (mobileNavDrawer && mobileNavDrawer.classList.contains('open')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  }
+
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+  }
+
+  if (mobileNavCloseBtn) {
+    mobileNavCloseBtn.addEventListener('click', closeMobileMenu);
+  }
+
+  if (mobileNavBackdrop) {
+    mobileNavBackdrop.addEventListener('click', closeMobileMenu);
+  }
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  const mobileDrawerDownloadBtn = document.getElementById('mobile-drawer-download-btn');
+  if (mobileDrawerDownloadBtn) {
+    mobileDrawerDownloadBtn.addEventListener('click', function () {
+      closeMobileMenu();
+      showDownloadToast();
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mobileNavDrawer && mobileNavDrawer.classList.contains('open')) {
+      closeMobileMenu();
+    }
+  });
+
+  // =========================================================================
+  // 12. INITIALIZATION
   // =========================================================================
   applyTheme(state.theme);
   applyLanguage(state.lang);
