@@ -5,7 +5,6 @@
    deliberately for technical data (specs, tags, HUD readouts).
    ========================================================================== */
 
-<<<<<<< HEAD
 :root {
   /* Brand Accents */
   --accent: #24ca44;
@@ -84,9 +83,6 @@
    ========================================================================== */
 
 *, *::before, *::after {
-=======
-* {
->>>>>>> 23be269c9f196fade7585b8f8e5f023e64717d76
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -227,28 +223,10 @@ svg {
   color: var(--accent);
 }
 
-<<<<<<< HEAD
 .gradient-text {
   background: linear-gradient(135deg, var(--accent) 0%, #4ade80 40%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-=======
-/* --------------------------------------------------------------------------
-   AMBIENT BACKGROUND — fine engineering grid, not blurred color blobs
-   -------------------------------------------------------------------------- */
-
-.ambient-glow {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 64px 64px;
-  -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 0%, transparent 75%);
-  mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 0%, transparent 75%);
->>>>>>> 23be269c9f196fade7585b8f8e5f023e64717d76
 }
 
 .glow-1,
@@ -474,7 +452,6 @@ svg {
 .brand-logo {
   height: 26px;
   width: auto;
-<<<<<<< HEAD
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(36, 202, 68, 0.25));
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -483,8 +460,6 @@ svg {
 .brand-link:hover .brand-logo {
   transform: scale(1.06);
   filter: drop-shadow(0 0 16px rgba(36, 202, 68, 0.5));
-=======
->>>>>>> 23be269c9f196fade7585b8f8e5f023e64717d76
 }
 
 .brand-text {
@@ -1156,14 +1131,10 @@ svg {
   min-width: 3px;
 }
 
-<<<<<<< HEAD
 .wave-bar:nth-child(even) {
   animation-duration: 0.8s;
   background-color: #4ade80;
 }
-=======
-/* --- Demucs / Stem HUD --- */
->>>>>>> 23be269c9f196fade7585b8f8e5f023e64717d76
 
 .stem-isolation-hud {
   position: absolute;
@@ -1318,13 +1289,8 @@ svg {
 }
 
 .mobile-role {
-<<<<<<< HEAD
   color: var(--accent);
   font-weight: 800;
-=======
-  font-weight: 700;
-  color: var(--accent);
->>>>>>> 23be269c9f196fade7585b8f8e5f023e64717d76
 }
 
 /* --- Waveform / WhisperX --- */
@@ -1352,7 +1318,6 @@ svg {
 
 .waveform-canvas-bars span {
   flex: 1;
-<<<<<<< HEAD
   background: linear-gradient(180deg, var(--accent) 0%, #4ade80 100%);
   border-radius: 2px;
   animation: waveDance 1s ease-in-out infinite alternate;
@@ -1364,12 +1329,6 @@ svg {
 @keyframes waveDance {
   0% { transform: scaleY(0.4); opacity: 0.6; }
   100% { transform: scaleY(1); opacity: 1; }
-=======
-  background: var(--accent);
-  opacity: 0.7;
-  border-radius: 1px;
-  min-width: 3px;
->>>>>>> 23be269c9f196fade7585b8f8e5f023e64717d76
 }
 
 .waveform-labels {
