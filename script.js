@@ -47,7 +47,7 @@
       nav_download: "Télécharger",
 
       // Hero
-      hero_badge: "Version 1.2 — Export Vidéo Ultra-Rapide & Format 9:16",
+      hero_badge: "Version 1.3 — Export Vidéo Ultra-Rapide & Format 9:16",
       hero_title_p1: "La Bande Rythmo",
       hero_title_accent: "Nouvelle Génération",
       hero_title_p2: "pour Doublage & Post-Synchro",
@@ -133,7 +133,7 @@
       specs_local_txt: "100% Traitement Local & Hors-Ligne (Aucune donnée envoyée dans le cloud)",
       specs_gpu_box_title: "Boost de Vitesse en Chiffres",
       speed_old: "Export classique disque",
-      speed_new: "OmeRyth v1.2 Direct RAM",
+      speed_new: "OmeRyth v1.3 Direct RAM",
 
       // FAQ
       faq_tag: "Questions Fréquentes",
@@ -151,7 +151,7 @@
       banner_title: "Prêt à créer des bandes rythmo parfaites ?",
       banner_desc: "Téléchargez OmeRyth pour Windows et découvrez la nouvelle référence du doublage assisté par ordinateur.",
       banner_versions_title: "Versions disponibles de l'application",
-      banner_btn: "Télécharger OmeRyth v1.2",
+      banner_btn: "Télécharger OmeRyth v1.3",
       banner_note: "Compatible Windows 10 & 11 • Version autonome portable disponible",
 
       // Footer
@@ -178,8 +178,8 @@
       contact_error: "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou vérifier vos informations.",
 
       // Toast
-      toast_title: "Version 1.2 — Téléchargement lancé",
-      toast_msg: "Le téléchargement d'OmeRyth_Setup_v1.2.exe a démarré !"
+      toast_title: "Version 1.3 — Téléchargement lancé",
+      toast_msg: "Le téléchargement d'OmeRyth_Setup_v1.3.exe a démarré !"
     },
 
     en: {
@@ -192,7 +192,7 @@
       nav_download: "Download",
 
       // Hero
-      hero_badge: "Version 1.2 — Ultra-Fast Video Export & 9:16 Mobile Format",
+      hero_badge: "Version 1.3 — Ultra-Fast Video Export & 9:16 Mobile Format",
       hero_title_p1: "The Next-Generation",
       hero_title_accent: "Rhythmic Band",
       hero_title_p2: "for Dubbing & Post-Sync",
@@ -278,7 +278,7 @@
       specs_local_txt: "100% Local & Offline Processing (No data is ever sent to the cloud)",
       specs_gpu_box_title: "Speed Comparison in Numbers",
       speed_old: "Traditional disk export",
-      speed_new: "OmeRyth v1.2 RAM Streaming",
+      speed_new: "OmeRyth v1.3 RAM Streaming",
 
       // FAQ
       faq_tag: "Frequently Asked Questions",
@@ -296,7 +296,7 @@
       banner_title: "Ready to create flawless rhythmic bands?",
       banner_desc: "Download OmeRyth for Windows and experience the new standard in computer-assisted dubbing.",
       banner_versions_title: "Available Application Versions",
-      banner_btn: "Download OmeRyth v1.2",
+      banner_btn: "Download OmeRyth v1.3",
       banner_note: "Compatible with Windows 10 & 11 • Portable standalone version available",
 
       // Footer
@@ -323,8 +323,8 @@
       contact_error: "An error occurred while sending. Please try again or verify your input.",
 
       // Toast
-      toast_title: "Version 1.2 — Download Started",
-      toast_msg: "Downloading OmeRyth_Setup_v1.2.exe has started!"
+      toast_title: "Version 1.3 — Download Started",
+      toast_msg: "Downloading OmeRyth_Setup_v1.3.exe has started!"
     }
   };
 
@@ -365,20 +365,20 @@
   // =========================================================================
   const titles = {
     rythmo: {
-      fr: "OmeRyth v1.2 — Projet : Ryusei_Shidou_Dub.rythmo [Synchronisation]",
-      en: "OmeRyth v1.2 — Project: Ryusei_Shidou_Dub.rythmo [Sync Engine]"
+      fr: "OmeRyth v1.3 — Projet : Ryusei_Shidou_Dub.rythmo [Synchronisation]",
+      en: "OmeRyth v1.3 — Project: Ryusei_Shidou_Dub.rythmo [Sync Engine]"
     },
     demucs: {
-      fr: "OmeRyth v1.2 — Isolation Vocale IA HTDemucs [Bande M&E]",
-      en: "OmeRyth v1.2 — HTDemucs AI Vocal Isolation [M&E Stems]"
+      fr: "OmeRyth v1.3 — Isolation Vocale IA HTDemucs [Bande M&E]",
+      en: "OmeRyth v1.3 — HTDemucs AI Vocal Isolation [M&E Stems]"
     },
     mobile: {
-      fr: "OmeRyth v1.2 — Atelier Export Vertical 1080×1920 (9:16)",
-      en: "OmeRyth v1.2 — Vertical 1080×1920 (9:16) Export Studio"
+      fr: "OmeRyth v1.3 — Atelier Export Vertical 1080×1920 (9:16)",
+      en: "OmeRyth v1.3 — Vertical 1080×1920 (9:16) Export Studio"
     },
     waveform: {
-      fr: "OmeRyth v1.2 — Forme d'Onde & WhisperX Auto-Spotting",
-      en: "OmeRyth v1.2 — Audio Waveform & WhisperX Auto-Spotting"
+      fr: "OmeRyth v1.3 — Forme d'Onde & WhisperX Auto-Spotting",
+      en: "OmeRyth v1.3 — Audio Waveform & WhisperX Auto-Spotting"
     }
   };
 
